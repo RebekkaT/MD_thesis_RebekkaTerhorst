@@ -10,3 +10,13 @@ http://soundbible.com/1436-Water-Noise.html
 - finish and submit the ethics proposalon Wednesday
 - learn more about python (introduction tutorial) until end of the week
 - begin with writing the introduction etc of thesis
+
+# week 6th- 10th november
+- submitted ethics proposal!!! (on wednesday)
+- I saw Jens on Thursday. We talked about further steps to take for the project and how to devide the work with Vasily. Jens organizes to run the video program for the stresstest. He proposed to test the loudness of our audio examples in MRI.
+- I did the introduction tutorial (needs some repetition)
+- edited introduction of thesis.
+
+- next weeks goals:
+- learn and read more about MRI techniques: for methods-part of thesis
+- test sounds in MRI, try Stresstest + video
