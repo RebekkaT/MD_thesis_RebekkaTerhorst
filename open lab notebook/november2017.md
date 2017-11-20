@@ -20,3 +20,10 @@ http://soundbible.com/1436-Water-Noise.html
 - next weeks goals:
 - learn and read more about MRI techniques: for methods-part of thesis
 - test sounds in MRI, try Stresstest + video
+
+# week 13th- 17th november
+- read about MRI, fMRI functioanlity
+- continued introductional tutorials "scientific python"
+
+- next weeks goals: further lecture of MRI information
+- test sounds, video, stresstest in MRI
