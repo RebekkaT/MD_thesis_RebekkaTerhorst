@@ -9,7 +9,7 @@
 - write "antrag auf annahme als doktorand"
 - prepare presentation abour stress paradigm for next weeks meeting
 - update knowledge of python etc.
-- ask Jens about financing salivette and MRI
+- ask Jens about financing salivette (-> probably our lab is financing it)
 
 # upcoming
 - visit in Regensburg to get to see the stresstest on april 26
