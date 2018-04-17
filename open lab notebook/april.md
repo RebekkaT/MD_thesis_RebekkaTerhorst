@@ -12,4 +12,4 @@
 - ask Jens about financing salivette and MRI
 
 # upcoming
-- visit in Regensburg to get to see the stresstest 
+- visit in Regensburg to get to see the stresstest on april 26
