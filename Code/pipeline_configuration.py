@@ -1,10 +1,25 @@
+# install cpac with all dependencies
+
+wget https://github.com/FCP-INDI/C-PAC/blob/master/scripts/cpac_install.sh?raw=true
+mv cpac_install.sh?raw=true cpac_install.sh
+chmod +x cpac_install.sh
+sudo ./cpac_install.sh -r
+
+# create a data configuration file
+cpac_data_config_setup.py --generate_template
+dataFormat:                  ['BIDS']
+bidsBaseDir:                 /path/to/BIDS/directory
+outputSubjectListLocation:   /save/configs/here
+subjectListName:             data_config_name
+
+cpac_data_config_setup.py --data_settings_file /path/to/data_settings.yml
+
 # CPAC Pipeline Configuration YAML file
 # Version 1.0.4
 #
 # http://fcp-indi.github.io for more info.
 #
 # Tip: This file can be edited manually with a text editor for quick modifications.
-
 
 # Select False if you intend to run CPAC on a single machine.
 # If set to True, CPAC will attempt to submit jobs through the job scheduler / resource manager selected below.
@@ -67,20 +82,20 @@ logDirectory :  /home/runs/pipeline01/log
 outputDirectory :  /home/runs/pipeline01/output
 
 
-# If setting the 'Output Directory' to an S3 bucket, insert the path to your AWS credentials file here. ?absicherung der daten?
-awsOutputBucketCredentials :  
+# If setting the 'Output Directory' to an S3 bucket, insert the path to your AWS credentials file here.
+awsOutputBucketCredentials :  # we don't need this option
 
 
 # Enable server-side 256-AES encryption on data to the S3 bucket
-s3Encryption :  [1]
+s3Encryption :  [1] #we don't need this option
 
 
 # Include extra versions and intermediate steps of functional preprocessing in the output directory.
-write_func_outputs: [0]
+write_func_outputs: [0] #? wenn ja welche? 
 
 
 # Include extra outputs in the output directory that may be of interest when more information is needed.
-write_debugging_outputs: [0]
+write_debugging_outputs: [0] #wenn ja welche? z.B. realigned output before normalization?!
 
 
 # Generate quality control pages containing preprocessing and derivative outputs.
