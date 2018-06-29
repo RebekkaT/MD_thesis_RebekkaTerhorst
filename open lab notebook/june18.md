@@ -13,4 +13,4 @@
 - sub 04 had no audio input
 - the lenght of the scanning is now reduced to 360 in the rest period due to the length of the music/water sound track
 - run cpac on the ubuntu server not on own laptop
-- 
+- test
