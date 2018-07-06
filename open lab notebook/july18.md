@@ -1,6 +1,7 @@
 # week 2.7.-6.7.
 - tried to run CPAC 
 - problems: couldn't enable qc
+- pipeline configuration error if Ants and FSL are anabled for the anatomical to template registration
 - crash log: could not create datasink; couldn't find input file for BET
 - CPAC didn't run properly with  the following settings in the pipeline:
 
@@ -671,7 +672,7 @@ ref_mask :  /usr/share/fsl/5.0/data/standard/MNI152_T1_${resolution_for_anat}_br
 
 
 # Register skull-on anatomical image to a template.
-regWithSkull :  [1]
+regWithSkull :  [0]
 
 
 # Disables skull-stripping on the anatomical inputs if they are already skull-stripped outside of C-PAC. Set this to On if your input images are already skull-stripped.
@@ -759,7 +760,7 @@ fmap_distcorr_dwell_asym_ratio : [0.93902439]
 
 
 # Set the phase-encoding direction. The options are: x, y, z, -x, -y, -z.
-fmap_distcorr_pedir :  x
+fmap_distcorr_pedir :  -y
 
 
 # Run Functional to Anatomical Registration
@@ -841,6 +842,15 @@ Regressors :
      linear :  1
      quadratic :  1
      gm :  0
+  -  compcor :  0
+     wm :  0
+     csf :  0
+     global :  0
+     pc1 :  0
+     motion :  0
+     linear :  0
+     quadratic :  0
+     gm :  1
 
 
 # Number of Principle Components to calculate when running CompCor. We recommend 5 or 6.
@@ -1057,6 +1067,7 @@ numGPAModelsAtOnce :  1
 
 # Use the + to add FSL model configuration to be run.
 modelConfigs :  []
+
 
 
 - additionally I read about MNE, a python based module which we want to use to analyse our physiological data (gsr, respiration, heart ferquency) and adapted a script from Malte Gueth. I uploaded it in the "Code" folder. Currently the settings remain provisionaly. the channels need to be more precisly defined. As well as I need to read further into the concrete function of "epochs".
